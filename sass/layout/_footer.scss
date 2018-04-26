@@ -4,11 +4,13 @@
   font-size: 1.4rem;
 
   &__logo-box {
-
+    text-align: center;
+    margin-bottom: 8rem;
   }
 
   &__logo {
-
+    width: 15rem;
+    height: auto;
   }
 
   &__navigation {
@@ -16,14 +18,21 @@
   }
 
   &__list {
-
+    list-style: none;
   }
 
   &__item {
+    display: inline;
 
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
   }
 
   &__link {
-    
+    &:link,
+    &:visited {
+      color: $color-grey-light-1;
+    }
   }
 }

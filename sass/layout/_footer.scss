@@ -33,6 +33,16 @@
     &:link,
     &:visited {
       color: $color-grey-light-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-grey-bluish;
+      box-shadow: 0 1rem 2rem rgba($shadow-black, .4);
     }
   }
+
 }

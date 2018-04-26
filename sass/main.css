@@ -646,6 +646,14 @@ body {
 
 .footer__link:link, .footer__link:visited {
   color: #f7f7f7;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.footer__link:hover, .footer__link:active {
+  color: #71778F;
+  box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.4);
 }
 
 .row {

@@ -746,6 +746,16 @@ body {
   text-align: center;
 }
 
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#999999, #71778F);
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;

@@ -22,17 +22,19 @@
   <div class="navigation">
     <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
 
-    <label for="nav-toggle" class="navigation__button">MENU</label>
+    <label for="nav-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
 
     <div class="navigation__background">&nbsp;</div>
 
     <nav class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#" class="navigation__link">About NBA Live</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Your Benefits</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Popular Tours</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> NBA Live</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
       </ul>
     </nav>
   </div>
@@ -50,7 +52,7 @@
         <span class="heading-primary--sub">WHERE IT ALL HAPPENS</span>
       </h1>
 
-      <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+      <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
     </div>
 
   </header>
@@ -139,7 +141,7 @@
 
     </section>
 
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
 
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
@@ -173,7 +175,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$297</p>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -204,7 +206,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$497</p>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -235,7 +237,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$897</p>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -398,6 +400,24 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <div class="popup__left">
+        <img src="assets/img/nba p.jpg" alt="Fan Photo" class="popup__img">
+        <img src="assets/img/nba p2.jpg" alt="Fan Photo" class="popup__img">
+      </div>
+      <div class="popup__right">
+        <a href="#section-tours" class="popup__close">&times;</a>
+        <h2 class="heading-secondary-2 u-margin-bottom-medium-fake">Start booking now</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+        <p class="popup__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit porro tempora dolores? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </p>
+        <a href="#" class="btn btn--blue-grey">Book Now</a>
+      </div>
+    </div>
+  </div>
 
   <!-- 
   <section class="grid_test">

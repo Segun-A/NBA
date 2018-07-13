@@ -5,10 +5,17 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.8.3"
+    "autoprefixer": "^8.4.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.8.3",
+    "postcss-cli": "^5.0.0"
   },
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss assets/css/main.css -w"
+    "watch:sass": "node-sass sass/main.scss assets/css/main.css -w",
+    "compile:sass": "node-sass sass/main.scss assets/css/main.comp.css",
+    "concat:css": "concat -o assets/css/main.concat.css assets/css/icon-font.css assets/css/main.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' assets/css/main.concat.css -o assets/css/main.prefix.css"
+    
   },
   "author": "edidiong",
   "license": "ISC"

@@ -365,7 +365,13 @@
 
   <footer class="footer">
     <div class="footer__logo-box">
-      <img src="assets/img/NBA Logo3.png" alt="Logo" class="footer__logo">
+      
+      <picture class="footer__logo">
+        <source srcset="assets/img/logo.png" media="(max-width: 37.5em)" >
+        <img srcset="assets/img/logo2.png 1x, assets/img/NBA Logo3.png 2x" alt="Logo">
+      </picture>
+
+      
     </div>
     <div class="row">
       <div class="col-1-of-2">

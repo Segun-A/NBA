@@ -13,10 +13,11 @@
     font-size: $default-font-size;
 
     //CHANGE FOR THE <button> ELEMENT
+    outline: none;
     border: none;
     cursor: pointer;
   }
-
+ 
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($shadow-black, 0.2);
